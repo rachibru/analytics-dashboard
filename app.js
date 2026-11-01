@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Inizializzazione Mappa Scura (CARTO Dark Matter)
+  // 1. Inizializzazione Mappa Scura GRATUITA (Esri Dark Gray - Nessuna API Key richiesta!)
   const map = L.map('world-map').setView([20, 0], 2);
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; OpenStreetMap &copy; CARTO',
-    subdomains: 'abcd',
-    maxZoom: 19
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+    maxZoom: 16
   }).addTo(map);
 
-  // Cache/Dizionario di emergenza per le città principali
+  // Cache/Dizionario per le coordinate delle città
   const cityCoords = {
     "Rome": [41.9028, 12.4964],
     "Milan": [45.4642, 9.1900],
@@ -23,19 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
     "Madrid": [40.4168, -3.7038]
   };
 
-  // Funzione per disegnare il cerchio luminoso sulla mappa
+  // Funzione per disegnare i pallini luminosi sulla mappa
   function addMarker(lat, lon, city, country, users) {
     L.circleMarker([lat, lon], {
-      radius: Math.min(Math.max(users * 3, 8), 30),
+      radius: Math.min(Math.max(users * 4, 8), 28),
       fillColor: '#00e5ff',
       color: '#00e5ff',
       weight: 1.5,
       opacity: 0.9,
-      fillOpacity: 0.35
+      fillOpacity: 0.4
     }).addTo(map).bindPopup(`<b>${city} (${country})</b><br>${users} lettori`);
   }
 
-  // 2. Caricamento dati con cache-busting
+  // 2. Caricamento dati dinamici
   fetch(`stats-data.json?t=${new Date().getTime()}`)
     .then(response => {
       if (!response.ok) throw new Error("File stats-data.json non trovato");
@@ -77,14 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // Mappe Geografiche (Città)
+      // Mappa Geografica utenti
       if (data.geo_data && data.geo_data.length > 0) {
         data.geo_data.forEach(item => {
           if (cityCoords[item.city]) {
             const [lat, lon] = cityCoords[item.city];
             addMarker(lat, lon, item.city, item.country, item.users);
           } else {
-            // Geocoding dinamico via Nominatim
             fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(item.city + ', ' + item.country)}`)
               .then(res => res.json())
               .then(geoRes => {
