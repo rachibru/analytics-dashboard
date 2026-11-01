@@ -1,0 +1,165 @@
+{
+  "kpis": {
+    "total_views": 508,
+    "total_clicks": 30,
+    "total_impressions": 329,
+    "avg_position": 50.4
+  },
+  "top_posts": [
+    {
+      "title": "brunorachiele.it",
+      "url": "www.brunorachiele.it/?m=1",
+      "views": 132,
+      "avg_time": "5s"
+    },
+    {
+      "title": "brunorachiele.it",
+      "url": "www.brunorachiele.it/",
+      "views": 55,
+      "avg_time": "4s"
+    },
+    {
+      "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
+      "url": "bio.brunorachiele.it/",
+      "views": 52,
+      "avg_time": "5s"
+    },
+    {
+      "title": "#primepagine del 13 ottobre 2026",
+      "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html",
+      "views": 29,
+      "avg_time": "7s"
+    },
+    {
+      "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html?m=1",
+      "views": 28,
+      "avg_time": "15s"
+    },
+    {
+      "title": "Sondaggio Politico 10 ottobre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-10-ottobre-2026-supermedia.html?m=1",
+      "views": 22,
+      "avg_time": "7s"
+    },
+    {
+      "title": "#primepagine del 9 ottobre 2026",
+      "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html?m=1",
+      "views": 15,
+      "avg_time": "10s"
+    },
+    {
+      "title": "Sondaggio Politico 3 ottobre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-3-ottobre-2026-supermedia.html?m=1",
+      "views": 15,
+      "avg_time": "4s"
+    },
+    {
+      "title": "Rassegna Stampa dell'11 Ottobre 2026: Stabilità istituzionale e primato del Centrodestra verso il traguardo di legislatura",
+      "url": "www.brunorachiele.it/2026/10/rassegna-stampa-dell11-ottobre-2026.html?m=1",
+      "views": 13,
+      "avg_time": "2s"
+    },
+    {
+      "title": "#primepagine",
+      "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html?m=1",
+      "views": 10,
+      "avg_time": "10s"
+    }
+  ],
+  "geo_data": [
+    {
+      "city": "Boardman",
+      "country": "United States",
+      "users": 31
+    },
+    {
+      "city": "Malaga",
+      "country": "Spain",
+      "users": 14
+    },
+    {
+      "city": "Council Bluffs",
+      "country": "United States",
+      "users": 13
+    },
+    {
+      "city": "Milan",
+      "country": "Italy",
+      "users": 12
+    },
+    {
+      "city": "Glenview",
+      "country": "United States",
+      "users": 7
+    },
+    {
+      "city": "Catanzaro",
+      "country": "Italy",
+      "users": 5
+    },
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "users": 5
+    },
+    {
+      "city": "",
+      "country": "Italy",
+      "users": 4
+    },
+    {
+      "city": "Rome",
+      "country": "Italy",
+      "users": 4
+    },
+    {
+      "city": "Bologna",
+      "country": "Italy",
+      "users": 2
+    },
+    {
+      "city": "Forest City",
+      "country": "United States",
+      "users": 2
+    },
+    {
+      "city": "Naples",
+      "country": "Italy",
+      "users": 2
+    }
+  ],
+  "search_queries": [
+    {
+      "query": "bruno rachiele",
+      "clicks": 30,
+      "impressions": 325,
+      "position": 3.2
+    },
+    {
+      "query": "cosa ha fatto",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 6
+    },
+    {
+      "query": "indagini demoscopiche",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 25
+    },
+    {
+      "query": "prime pagine giornali",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 50
+    },
+    {
+      "query": "vannacci sondaggi",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 168
+    }
+  ],
+  "last_updated": "01/11/2026 16:31"
+}
