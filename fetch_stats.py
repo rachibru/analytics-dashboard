@@ -11,7 +11,6 @@ from google.analytics.data_v1beta.types import (
     Dimension
 )
 
-# 1. Carica le credenziali dal Secret di GitHub
 sa_json_str = os.environ.get("GCP_SA_KEY")
 if not sa_json_str:
     raise ValueError("La variabile GCP_SA_KEY non è impostata!")
@@ -25,19 +24,14 @@ credentials = service_account.Credentials.from_service_account_info(
     ]
 )
 
-# Inserisci i tuoi ID qui
-GA4_PROPERTY_ID = "394476917"  # Solo i numeri (es. "123456789")
-SITE_URL = "sc-domain:brunorachiele.it"     # URL del sito registrato su Search Console
+GA4_PROPERTY_ID = "IL_TUO_GA4_PROPERTY_ID"  # Inserisci le tue cifre
+SITE_URL = "https://www.brunorachiele.it/"     # Il tuo URL Search Console
 
-# ----------------------------------------------------
-# A. ESTRAZIONE DATI DA GOOGLE ANALYTICS 4
-# ----------------------------------------------------
 analytics_client = BetaAnalyticsDataClient(credentials=credentials)
 
-# KPI generali ultimi 30 giorni
+# 1. KPI generali ultimi 30 giorni
 request_kpi = RunReportRequest(
     property=f"properties/{GA4_PROPERTY_ID}",
-    dimensions=[],
     metrics=[Metric(name="activeUsers"), Metric(name="screenPageviews")],
     date_ranges=[DateRange(start_date="30daysAgo", end_date="today")]
 )
@@ -47,7 +41,27 @@ total_views = 0
 if response_kpi.rows:
     total_views = int(response_kpi.rows[0].metric_values[1].value)
 
-# Top Articoli
+# 2. Andamento giornaliero (per il grafico)
+request_chart = RunReportRequest(
+    property=f"properties/{GA4_PROPERTY_ID}",
+    dimensions=[Dimension(name="date")],
+    metrics=[Metric(name="screenPageviews")],
+    date_ranges=[DateRange(start_date="14daysAgo", end_date="today")]
+)
+response_chart = analytics_client.run_report(request_chart)
+
+chart_labels = []
+chart_data = []
+if response_chart.rows:
+    # Ordina per data
+    sorted_rows = sorted(response_chart.rows, key=lambda x: x.dimension_values[0].value)
+    for row in sorted_rows:
+        raw_date = row.dimension_values[0].value # YYYYMMDD
+        formatted_date = f"{raw_date[6:8]}/{raw_date[4:6]}"
+        chart_labels.append(formatted_date)
+        chart_data.append(int(row.metric_values[0].value))
+
+# 3. Top Articoli
 request_posts = RunReportRequest(
     property=f"properties/{GA4_PROPERTY_ID}",
     dimensions=[Dimension(name="pageTitle"), Dimension(name="fullPageUrl")],
@@ -65,7 +79,7 @@ for row in response_posts.rows[:10]:
     avg_time = f"{int(duration / max(views, 1))}s"
     top_posts.append({"title": title, "url": url, "views": views, "avg_time": avg_time})
 
-# Geolocalizzazione (Città)
+# 4. Geolocalizzazione (Città)
 request_geo = RunReportRequest(
     property=f"properties/{GA4_PROPERTY_ID}",
     dimensions=[Dimension(name="city"), Dimension(name="country")],
@@ -82,11 +96,8 @@ for row in response_geo.rows[:15]:
     if city != "(not set)":
         geo_data.append({"city": city, "country": country, "users": users})
 
-# ----------------------------------------------------
-# B. ESTRAZIONE DATI DA GOOGLE SEARCH CONSOLE
-# ----------------------------------------------------
+# 5. Search Console
 search_console_service = build('searchconsole', 'v1', credentials=credentials)
-
 end_date = datetime.date.today() - datetime.timedelta(days=2)
 start_date = end_date - datetime.timedelta(days=30)
 
@@ -123,9 +134,6 @@ if 'rows' in sc_response:
 
 avg_position = round(sum(positions) / max(len(positions), 1), 1)
 
-# ----------------------------------------------------
-# C. SALVATAGGIO DEI DATI IN UN FILE JSON
-# ----------------------------------------------------
 data = {
     "kpis": {
         "total_views": total_views,
@@ -133,13 +141,7 @@ data = {
         "total_impressions": total_impressions,
         "avg_position": avg_position
     },
-    "top_posts": top_posts,
-    "geo_data": geo_data,
-    "search_queries": search_queries,
-    "last_updated": datetime.datetime.now().strftime("%d/%m/%Y %H:%M")
-}
-
-with open("stats-data.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-
-print("Dati aggiornati con successo in stats-data.json!")
+    "chart": {
+        "labels": chart_labels,
+        "data": chart_data
+    },
