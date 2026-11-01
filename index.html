@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bruno Rachiele — Analytics Control Center</title>
+  <title>Bruno Rachiele — Analytics Map Dashboard</title>
   
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   
-  <!-- Leaflet per la Mappa Mondiale Scura -->
+  <!-- Leaflet per la Mappa Mondiale -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
@@ -17,68 +17,53 @@
 </head>
 <body>
 
-  <!-- Top Bar Navbar -->
-  <header class="topbar">
-    <div class="logo">BRUNO RACHIELE <span>ANALYTICS</span></div>
-    <div class="live-status">
-      <span class="pulse-dot"></span> LIVE MONITORING
-    </div>
-  </header>
+  <!-- MAPPA DI SFONDO A TUTTO SCHERMO -->
+  <div id="world-map"></div>
 
-  <div class="container">
+  <!-- PANNELLO OVERLAY (Floating Sidebar & KPI) -->
+  <div class="dashboard-overlay">
     
-    <!-- 4 Metriche chiave in alto -->
-    <div class="kpi-grid">
-      <div class="kpi-card">
-        <h3>VISITE TOTALI (30gg)</h3>
-        <p class="kpi-value" id="total-views">---</p>
-      </div>
-      <div class="kpi-card">
-        <h3>CLIC DA GOOGLE</h3>
-        <p class="kpi-value" id="google-clicks">---</p>
-      </div>
-      <div class="kpi-card">
-        <h3>IMPRESSIONI SEARCH</h3>
-        <p class="kpi-value" id="google-impressions">---</p>
-      </div>
-      <div class="kpi-card">
-        <h3>POSIZIONE MEDIA</h3>
-        <p class="kpi-value" id="avg-position">---</p>
-      </div>
-    </div>
-
-    <!-- MAPPA DEL MONDO EFFETTO GLOW -->
-    <div class="section-card">
-      <div class="card-header">
-        <h2>Geolocalizzazione Lettori & Connessioni Live</h2>
-      </div>
-      <div id="world-map"></div>
-    </div>
-
-    <!-- Griglia a 2 colonne: Grafico Traffico + Search Queries -->
-    <div class="two-col-grid">
-      
-      <!-- Grafico Andamento -->
-      <div class="section-card">
-        <div class="card-header">
-          <h2>Andamento Visualizzazioni</h2>
+    <!-- Sidebar Sinistra con Statistiche -->
+    <aside class="sidebar-panel">
+      <div class="brand">
+        <h1>BRUNO RACHIELE</h1>
+        <div class="live-status">
+          <span class="pulse-dot"></span> LIVE MONITORING
         </div>
+      </div>
+
+      <!-- Metriche KPI -->
+      <div class="kpi-list">
+        <div class="kpi-item">
+          <span class="kpi-label">VISITE TOTALI (30gg)</span>
+          <span class="kpi-value" id="total-views">---</span>
+        </div>
+        <div class="kpi-item">
+          <span class="kpi-label">CLIC DA GOOGLE</span>
+          <span class="kpi-value" id="google-clicks">---</span>
+        </div>
+        <div class="kpi-item">
+          <span class="kpi-label">IMPRESSIONI SEARCH</span>
+          <span class="kpi-value" id="google-impressions">---</span>
+        </div>
+        <div class="kpi-item">
+          <span class="kpi-label">POSIZIONE MEDIA</span>
+          <span class="kpi-value" id="avg-position">---</span>
+        </div>
+      </div>
+
+      <!-- Mini Grafico Traffico -->
+      <div class="panel-section">
+        <h3>ANDAMENTO TRAFFICO</h3>
         <canvas id="trafficChart"></canvas>
       </div>
 
-      <!-- Top Parole Chiave Search Console -->
-      <div class="section-card">
-        <div class="card-header">
-          <h2>Top Query di Ricerca (Google)</h2>
-        </div>
-        <table class="data-table">
+      <!-- Top Query Search Console -->
+      <div class="panel-section scrollable">
+        <h3>TOP RICERCHE GOOGLE</h3>
+        <table class="mini-table">
           <thead>
-            <tr>
-              <th>Parola Chiave</th>
-              <th>Clic</th>
-              <th>Impr.</th>
-              <th>Posiz.</th>
-            </tr>
+            <tr><th>Query</th><th>Clic</th><th>Pos.</th></tr>
           </thead>
           <tbody id="queries-table-body">
             <!-- Popolato via JS -->
@@ -86,26 +71,20 @@
         </table>
       </div>
 
-    </div>
-
-    <!-- Tabella Articoli Più Letti -->
-    <div class="section-card">
-      <div class="card-header">
-        <h2>Articoli Più Letti di Sempre / Ultimo Mese</h2>
+      <!-- Top Articoli -->
+      <div class="panel-section scrollable">
+        <h3>ARTICOLI PIÙ LETTI</h3>
+        <table class="mini-table">
+          <thead>
+            <tr><th>Titolo</th><th>Viste</th></tr>
+          </thead>
+          <tbody id="top-posts-body">
+            <!-- Popolato via JS -->
+          </tbody>
+        </table>
       </div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Titolo Articolo</th>
-            <th>Visualizzazioni</th>
-            <th>Tempo Medio</th>
-          </tr>
-        </thead>
-        <tbody id="top-posts-body">
-          <!-- Popolato via JS -->
-        </tbody>
-      </table>
-    </div>
+
+    </aside>
 
   </div>
 
