@@ -4,44 +4,87 @@
   padding: 0;
 }
 
-body {
-  background-color: #0d0f12;
-  color: #e1e6ed;
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   font-family: 'Inter', sans-serif;
-  padding-bottom: 40px;
+  background-color: #08090c;
+  color: #e1e6ed;
 }
 
-.topbar {
+/* Mappa a tutto schermo */
+#world-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: #08090c;
+}
+
+/* Layer trasparente sovrapposto */
+.dashboard-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* Permette la navigazione sulla mappa sotto */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 32px;
-  background: #13161c;
-  border-bottom: 1px solid #1f242d;
+  padding: 20px;
 }
 
-.logo {
+/* Sidebar galleggiante con effetto Glassmorphism */
+.sidebar-panel {
+  pointer-events: auto; /* Riattiva la cliccabilità sulla sidebar */
+  width: 380px;
+  max-width: 90vw;
+  height: calc(100vh - 40px);
+  background: rgba(13, 15, 20, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.sidebar-panel::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-panel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+/* Header Brand */
+.brand h1 {
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  font-size: 16px;
-}
-
-.logo span {
-  color: #00e5ff;
+  color: #ffffff;
 }
 
 .live-status {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   color: #00e5ff;
+  margin-top: 4px;
 }
 
 .pulse-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   background-color: #00e5ff;
   border-radius: 50%;
   box-shadow: 0 0 10px #00e5ff;
@@ -54,90 +97,64 @@ body {
   100% { opacity: 0.3; }
 }
 
-.container {
-  max-width: 1300px;
-  margin: 28px auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-/* KPI Cards */
-.kpi-grid {
+/* KPI Grid */
+.kpi-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
 
-.kpi-card {
-  background: #13161c;
-  border: 1px solid #1f242d;
-  border-radius: 10px;
-  padding: 20px;
+.kpi-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 8px;
 }
 
-.kpi-card h3 {
-  font-size: 11px;
+.kpi-label {
+  display: block;
+  font-size: 9px;
   color: #8b949e;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
 }
 
 .kpi-value {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   color: #ffffff;
 }
 
-/* Mappa */
-.section-card {
-  background: #13161c;
-  border: 1px solid #1f242d;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.card-header h2 {
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: #ffffff;
-}
-
-#world-map {
-  height: 420px;
-  width: 100%;
+/* Sezioni interne */
+.panel-section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   border-radius: 8px;
-  background: #090a0f;
+  padding: 14px;
 }
 
-.two-col-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.panel-section h3 {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #8b949e;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 900px) {
-  .two-col-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Tabelle */
-.data-table {
+/* Tabelle mini */
+.mini-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 12px;
 }
 
-.data-table th, .data-table td {
-  padding: 12px;
+.mini-table th, .mini-table td {
+  padding: 8px 4px;
   text-align: left;
-  border-bottom: 1px solid #1f242d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.data-table th {
-  color: #8b949e;
+.mini-table th {
+  color: #6e7681;
   font-weight: 600;
+  font-size: 10px;
 }
