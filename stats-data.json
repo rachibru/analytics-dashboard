@@ -1,9 +1,45 @@
 {
   "kpis": {
-    "total_views": 508,
+    "total_views": 509,
     "total_clicks": 30,
     "total_impressions": 329,
     "avg_position": 50.4
+  },
+  "chart": {
+    "labels": [
+      "18/10",
+      "19/10",
+      "20/10",
+      "21/10",
+      "22/10",
+      "23/10",
+      "24/10",
+      "25/10",
+      "26/10",
+      "27/10",
+      "28/10",
+      "29/10",
+      "30/10",
+      "31/10",
+      "01/11"
+    ],
+    "data": [
+      3,
+      8,
+      2,
+      1,
+      2,
+      5,
+      9,
+      10,
+      13,
+      4,
+      2,
+      14,
+      9,
+      56,
+      11
+    ]
   },
   "top_posts": [
     {
@@ -21,7 +57,7 @@
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 52,
+      "views": 53,
       "avg_time": "5s"
     },
     {
@@ -71,7 +107,7 @@
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 31
+      "users": 32
     },
     {
       "city": "Malaga",
@@ -161,5 +197,5 @@
       "position": 168
     }
   ],
-  "last_updated": "01/11/2026 16:31"
+  "last_updated": "01/11/2026 16:51"
 }
