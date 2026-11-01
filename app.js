@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Inizializzazione Mappa Scura
+  // 1. Inizializzazione Mappa Scura (CARTO Dark Matter)
   const map = L.map('world-map').setView([20, 0], 2);
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     maxZoom: 19
   }).addTo(map);
 
-  // Coordinate di emergenza/frequenti per evitare il blocco CORS di Nominatim
+  // Cache/Dizionario di emergenza per le città principali
   const cityCoords = {
     "Rome": [41.9028, 12.4964],
     "Milan": [45.4642, 9.1900],
@@ -23,21 +23,35 @@ document.addEventListener('DOMContentLoaded', () => {
     "Madrid": [40.4168, -3.7038]
   };
 
-  // Caricamento dati con parametro casuale per bypassare la cache del browser
+  // Funzione per disegnare il cerchio luminoso sulla mappa
+  function addMarker(lat, lon, city, country, users) {
+    L.circleMarker([lat, lon], {
+      radius: Math.min(Math.max(users * 3, 8), 30),
+      fillColor: '#00e5ff',
+      color: '#00e5ff',
+      weight: 1.5,
+      opacity: 0.9,
+      fillOpacity: 0.35
+    }).addTo(map).bindPopup(`<b>${city} (${country})</b><br>${users} lettori`);
+  }
+
+  // 2. Caricamento dati con cache-busting
   fetch(`stats-data.json?t=${new Date().getTime()}`)
     .then(response => {
       if (!response.ok) throw new Error("File stats-data.json non trovato");
       return response.json();
     })
     .then(data => {
-      // 1. Aggiornamento KPI Cards
-      document.getElementById('total-views').innerText = (data.kpis.total_views || 0).toLocaleString('it-IT');
-      document.getElementById('google-clicks').innerText = (data.kpis.total_clicks || 0).toLocaleString('it-IT');
-      document.getElementById('google-impressions').innerText = (data.kpis.total_impressions || 0).toLocaleString('it-IT');
-      document.getElementById('avg-position').innerText = data.kpis.avg_position || '0';
+      // KPI Cards
+      if (data.kpis) {
+        document.getElementById('total-views').innerText = (data.kpis.total_views || 0).toLocaleString('it-IT');
+        document.getElementById('google-clicks').innerText = (data.kpis.total_clicks || 0).toLocaleString('it-IT');
+        document.getElementById('google-impressions').innerText = (data.kpis.total_impressions || 0).toLocaleString('it-IT');
+        document.getElementById('avg-position').innerText = data.kpis.avg_position || '0';
+      }
 
-      // 2. Grafico del traffico reale
-      if (data.chart && data.chart.labels) {
+      // Grafico del traffico
+      if (data.chart && data.chart.labels && data.chart.labels.length > 0) {
         const ctx = document.getElementById('trafficChart').getContext('2d');
         new Chart(ctx, {
           type: 'line',
@@ -56,63 +70,70 @@ document.addEventListener('DOMContentLoaded', () => {
             responsive: true,
             plugins: { legend: { display: false } },
             scales: {
-              x: { grid: { color: '#1f242d' }, ticks: { color: '#8b949e' } },
-              y: { grid: { color: '#1f242d' }, ticks: { color: '#8b949e' } }
+              x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#8b949e' } },
+              y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#8b949e' } }
             }
           }
         });
       }
 
-      // 3. Mappa Mondo
-      if (data.geo_data) {
+      // Mappe Geografiche (Città)
+      if (data.geo_data && data.geo_data.length > 0) {
         data.geo_data.forEach(item => {
-          let coords = cityCoords[item.city];
-          if (coords) {
-            L.circleMarker(coords, {
-              radius: Math.min(Math.max(item.users * 3, 6), 20),
-              fillColor: '#00e5ff',
-              color: '#00e5ff',
-              weight: 1,
-              opacity: 0.9,
-              fillOpacity: 0.5
-            }).addTo(map).bindPopup(`<b>${item.city} (${item.country})</b><br>${item.users} utenti attivi`);
+          if (cityCoords[item.city]) {
+            const [lat, lon] = cityCoords[item.city];
+            addMarker(lat, lon, item.city, item.country, item.users);
+          } else {
+            // Geocoding dinamico via Nominatim
+            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(item.city + ', ' + item.country)}`)
+              .then(res => res.json())
+              .then(geoRes => {
+                if (geoRes && geoRes.length > 0) {
+                  const lat = parseFloat(geoRes[0].lat);
+                  const lon = parseFloat(geoRes[0].lon);
+                  addMarker(lat, lon, item.city, item.country, item.users);
+                }
+              })
+              .catch(() => {});
           }
         });
       }
 
-      // 4. Tabella Search Queries
+      // Tabella Search Queries
       const queriesTbody = document.getElementById('queries-table-body');
-      queriesTbody.innerHTML = '';
-      if (data.search_queries && data.search_queries.length > 0) {
-        data.search_queries.forEach(q => {
-          const tr = document.createElement('tr');
-          tr.innerHTML = `
-            <td><b>${q.query}</b></td>
-            <td>${q.clicks}</td>
-            <td>${q.impressions}</td>
-            <td>${q.position}</td>
-          `;
-          queriesTbody.appendChild(tr);
-        });
-      } else {
-        queriesTbody.innerHTML = '<tr><td colspan="4">Nessun dato Search Console disponibile</td></tr>';
+      if (queriesTbody) {
+        queriesTbody.innerHTML = '';
+        if (data.search_queries && data.search_queries.length > 0) {
+          data.search_queries.forEach(q => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td><b>${q.query}</b></td>
+              <td>${q.clicks}</td>
+              <td>${q.position}</td>
+            `;
+            queriesTbody.appendChild(tr);
+          });
+        } else {
+          queriesTbody.innerHTML = '<tr><td colspan="3">Nessun dato disponibile</td></tr>';
+        }
       }
 
-      // 5. Tabella Articoli Più Letti
+      // Tabella Articoli Più Letti
       const postsTbody = document.getElementById('top-posts-body');
-      postsTbody.innerHTML = '';
-      if (data.top_posts && data.top_posts.length > 0) {
-        data.top_posts.forEach(p => {
-          const tr = document.createElement('tr');
-          tr.innerHTML = `
-            <td><a href="${p.url}" target="_blank" style="color: #00e5ff; text-decoration: none;">${p.title}</a></td>
-            <td><b>${p.views.toLocaleString('it-IT')}</b></td>
-            <td>${p.avg_time}</td>
-          `;
-          postsTbody.appendChild(tr);
-        });
-      } else {
-        postsTbody.innerHTML = '<tr><td colspan="3">Nessun articolo trovato</td></tr>';
+      if (postsTbody) {
+        postsTbody.innerHTML = '';
+        if (data.top_posts && data.top_posts.length > 0) {
+          data.top_posts.forEach(p => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td><a href="${p.url}" target="_blank" style="color: #00e5ff; text-decoration: none;">${p.title}</a></td>
+              <td><b>${p.views.toLocaleString('it-IT')}</b></td>
+            `;
+            postsTbody.appendChild(tr);
+          });
+        } else {
+          postsTbody.innerHTML = '<tr><td colspan="2">Nessun articolo trovato</td></tr>';
+        }
       }
     })
     .catch(err => {
