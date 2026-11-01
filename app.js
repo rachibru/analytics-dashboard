@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Inizializzazione Mappa Scura
+  // 1. Inizializzazione Mappa Mondiale Scura (CARTO Dark Matter)
   const map = L.map('world-map').setView([20, 0], 2);
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -8,47 +8,74 @@ document.addEventListener('DOMContentLoaded', () => {
     maxZoom: 19
   }).addTo(map);
 
-  // Esempio punti di calore/connessione sulla mappa
-  const sampleLocations = [
-    { name: "Roma", lat: 41.9028, lng: 12.4964, views: 1240 },
-    { name: "Milano", lat: 45.4642, lng: 9.1900, views: 890 },
-    { name: "New York", lat: 40.7128, lng: -74.0060, views: 310 },
-    { name: "Londra", lat: 51.5074, lng: -0.1278, views: 220 }
-  ];
-
-  sampleLocations.forEach(loc => {
-    L.circleMarker([loc.lat, loc.lng], {
-      radius: Math.min(loc.views / 50, 20),
-      fillColor: '#00e5ff',
-      color: '#00e5ff',
-      weight: 1,
-      opacity: 0.8,
-      fillOpacity: 0.4
-    }).addTo(map).bindPopup(`<b>${loc.name}</b><br>${loc.views} visualizzazioni`);
-  });
-
-  // 2. Grafico di prova
-  const ctx = document.getElementById('trafficChart').getContext('2d');
-  new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: ['1 Nov', '2 Nov', '3 Nov', '4 Nov', '5 Nov', '6 Nov'],
-      datasets: [{
-        label: 'Visite',
-        data: [420, 580, 750, 620, 890, 1100],
-        borderColor: '#00e5ff',
-        backgroundColor: 'rgba(0, 229, 255, 0.1)',
-        fill: true,
-        tension: 0.4
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: { legend: { display: false } },
-      scales: {
-        x: { grid: { color: '#1f242d' }, ticks: { color: '#8b949e' } },
-        y: { grid: { color: '#1f242d' }, ticks: { color: '#8b949e' } }
+  // 2. Caricamento dati dinamici da stats-data.json
+  fetch('stats-data.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Impossibile caricare stats-data.json");
       }
-    }
-  });
+      return response.json();
+    })
+    .then(data => {
+      // Aggiornamento KPI Cards
+      document.getElementById('total-views').innerText = data.kpis.total_views.toLocaleString('it-IT');
+      document.getElementById('google-clicks').innerText = data.kpis.total_clicks.toLocaleString('it-IT');
+      document.getElementById('google-impressions').innerText = data.kpis.total_impressions.toLocaleString('it-IT');
+      document.getElementById('avg-position').innerText = data.kpis.avg_position;
+
+      // Popolamento Mappa con le città dei lettori
+      if (data.geo_data && data.geo_data.length > 0) {
+        data.geo_data.forEach(item => {
+          // Geocoding approssimativo tramite API gratuita OpenStreetMap Nominatim
+          fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(item.city + ', ' + item.country)}`)
+            .then(res => res.json())
+            .then(geoRes => {
+              if (geoRes && geoRes.length > 0) {
+                const lat = parseFloat(geoRes[0].lat);
+                const lon = parseFloat(geoRes[0].lon);
+                
+                L.circleMarker([lat, lon], {
+                  radius: Math.min(Math.max(item.users * 2, 6), 25),
+                  fillColor: '#00e5ff',
+                  color: '#00e5ff',
+                  weight: 1,
+                  opacity: 0.9,
+                  fillOpacity: 0.5
+                }).addTo(map).bindPopup(`<b>${item.city} (${item.country})</b><br>${item.users} utenti attivi`);
+              }
+            })
+            .catch(() => {});
+        });
+      }
+
+      // Popolamento Tabella Top Query (Search Console)
+      const queriesTbody = document.getElementById('queries-table-body');
+      queriesTbody.innerHTML = '';
+      data.search_queries.forEach(q => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><b>${q.query}</b></td>
+          <td>${q.clicks}</td>
+          <td>${q.impressions}</td>
+          <td>${q.position}</td>
+        `;
+        queriesTbody.appendChild(tr);
+      });
+
+      // Popolamento Tabella Articoli Più Letti
+      const postsTbody = document.getElementById('top-posts-body');
+      postsTbody.innerHTML = '';
+      data.top_posts.forEach(p => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><a href="${p.url}" target="_blank" style="color: #00e5ff; text-decoration: none;">${p.title}</a></td>
+          <td><b>${p.views.toLocaleString('it-IT')}</b></td>
+          <td>${p.avg_time}</td>
+        `;
+        postsTbody.appendChild(tr);
+      });
+    })
+    .catch(error => {
+      console.error("Errore caricamento dati:", error);
+    });
 });
