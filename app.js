@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. Inizializzazione Mappa Scura GRATUITA (Esri Dark Gray - Nessuna API Key richiesta!)
   const map = L.map('world-map').setView([20, 0], 2);
 
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-    maxZoom: 16
+// OpenStreetMap libero e garantito al 100%
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 19
   }).addTo(map);
 
   // Cache/Dizionario per le coordinate delle città
