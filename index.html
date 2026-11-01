@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruno Rachiele — Analytics Control Center</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- Leaflet per la Mappa Mondiale Scura -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar Navbar -->
+  <header class="topbar">
+    <div class="logo">BRUNO RACHIELE <span>ANALYTICS</span></div>
+    <div class="live-status">
+      <span class="pulse-dot"></span> LIVE MONITORING
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- 4 Metriche chiave in alto -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <h3>VISITE TOTALI (30gg)</h3>
+        <p class="kpi-value" id="total-views">---</p>
+      </div>
+      <div class="kpi-card">
+        <h3>CLIC DA GOOGLE</h3>
+        <p class="kpi-value" id="google-clicks">---</p>
+      </div>
+      <div class="kpi-card">
+        <h3>IMPRESSIONI SEARCH</h3>
+        <p class="kpi-value" id="google-impressions">---</p>
+      </div>
+      <div class="kpi-card">
+        <h3>POSIZIONE MEDIA</h3>
+        <p class="kpi-value" id="avg-position">---</p>
+      </div>
+    </div>
+
+    <!-- MAPPA DEL MONDO EFFETTO GLOW -->
+    <div class="section-card">
+      <div class="card-header">
+        <h2>Geolocalizzazione Lettori & Connessioni Live</h2>
+      </div>
+      <div id="world-map"></div>
+    </div>
+
+    <!-- Griglia a 2 colonne: Grafico Traffico + Search Queries -->
+    <div class="two-col-grid">
+      
+      <!-- Grafico Andamento -->
+      <div class="section-card">
+        <div class="card-header">
+          <h2>Andamento Visualizzazioni</h2>
+        </div>
+        <canvas id="trafficChart"></canvas>
+      </div>
+
+      <!-- Top Parole Chiave Search Console -->
+      <div class="section-card">
+        <div class="card-header">
+          <h2>Top Query di Ricerca (Google)</h2>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Parola Chiave</th>
+              <th>Clic</th>
+              <th>Impr.</th>
+              <th>Posiz.</th>
+            </tr>
+          </thead>
+          <tbody id="queries-table-body">
+            <!-- Popolato via JS -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Tabella Articoli Più Letti -->
+    <div class="section-card">
+      <div class="card-header">
+        <h2>Articoli Più Letti di Sempre / Ultimo Mese</h2>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Titolo Articolo</th>
+            <th>Visualizzazioni</th>
+            <th>Tempo Medio</th>
+          </tr>
+        </thead>
+        <tbody id="top-posts-body">
+          <!-- Popolato via JS -->
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
