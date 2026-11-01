@@ -27,7 +27,7 @@ credentials = service_account.Credentials.from_service_account_info(
 
 # Inserisci i tuoi ID qui
 GA4_PROPERTY_ID = "394476917"  # Solo i numeri (es. "123456789")
-SITE_URL = "https://www.brunorachiele.it/"     # URL del sito registrato su Search Console
+SITE_URL = "sc-domain:brunorachiele.it"     # URL del sito registrato su Search Console
 
 # ----------------------------------------------------
 # A. ESTRAZIONE DATI DA GOOGLE ANALYTICS 4
