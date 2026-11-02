@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 509,
-    "total_clicks": 30,
-    "total_impressions": 329,
-    "avg_position": 50.4
+    "total_views": 517,
+    "total_clicks": 31,
+    "total_impressions": 334,
+    "avg_position": 50.5
   },
   "chart": {
     "labels": [
-      "18/10",
       "19/10",
       "20/10",
       "21/10",
@@ -24,7 +23,6 @@
       "01/11"
     ],
     "data": [
-      3,
       8,
       2,
       1,
@@ -38,26 +36,26 @@
       14,
       9,
       56,
-      11
+      22
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 132,
+      "views": 137,
       "avg_time": "5s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 55,
+      "views": 53,
       "avg_time": "4s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 53,
+      "views": 52,
       "avg_time": "5s"
     },
     {
@@ -69,8 +67,8 @@
     {
       "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html?m=1",
-      "views": 28,
-      "avg_time": "15s"
+      "views": 29,
+      "avg_time": "14s"
     },
     {
       "title": "Sondaggio Politico 10 ottobre 2026 – Supermedia Bruno Rachiele",
@@ -107,7 +105,7 @@
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 32
+      "users": 31
     },
     {
       "city": "Malaga",
@@ -115,19 +113,19 @@
       "users": 14
     },
     {
-      "city": "Council Bluffs",
-      "country": "United States",
+      "city": "Milan",
+      "country": "Italy",
       "users": 13
     },
     {
-      "city": "Milan",
-      "country": "Italy",
+      "city": "Council Bluffs",
+      "country": "United States",
       "users": 12
     },
     {
       "city": "Glenview",
       "country": "United States",
-      "users": 7
+      "users": 6
     },
     {
       "city": "Catanzaro",
@@ -138,11 +136,6 @@
       "city": "London",
       "country": "United Kingdom",
       "users": 5
-    },
-    {
-      "city": "",
-      "country": "Italy",
-      "users": 4
     },
     {
       "city": "Rome",
@@ -168,9 +161,9 @@
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 30,
-      "impressions": 325,
-      "position": 3.2
+      "clicks": 31,
+      "impressions": 330,
+      "position": 3.3
     },
     {
       "query": "cosa ha fatto",
@@ -197,5 +190,5 @@
       "position": 168
     }
   ],
-  "last_updated": "01/11/2026 16:51"
+  "last_updated": "02/11/2026 10:39"
 }
