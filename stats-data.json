@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 517,
-    "total_clicks": 31,
-    "total_impressions": 334,
+    "total_views": 524,
+    "total_clicks": 30,
+    "total_impressions": 327,
     "avg_position": 50.5
   },
   "chart": {
     "labels": [
-      "19/10",
       "20/10",
       "21/10",
       "22/10",
@@ -20,10 +19,11 @@
       "29/10",
       "30/10",
       "31/10",
-      "01/11"
+      "01/11",
+      "02/11",
+      "03/11"
     ],
     "data": [
-      8,
       2,
       1,
       2,
@@ -36,20 +36,22 @@
       14,
       9,
       56,
-      22
+      22,
+      26,
+      1
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 137,
+      "views": 133,
       "avg_time": "5s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 53,
+      "views": 58,
       "avg_time": "4s"
     },
     {
@@ -83,12 +85,6 @@
       "avg_time": "10s"
     },
     {
-      "title": "Sondaggio Politico 3 ottobre 2026 – Supermedia Bruno Rachiele",
-      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-3-ottobre-2026-supermedia.html?m=1",
-      "views": 15,
-      "avg_time": "4s"
-    },
-    {
       "title": "Rassegna Stampa dell'11 Ottobre 2026: Stabilità istituzionale e primato del Centrodestra verso il traguardo di legislatura",
       "url": "www.brunorachiele.it/2026/10/rassegna-stampa-dell11-ottobre-2026.html?m=1",
       "views": 13,
@@ -99,6 +95,12 @@
       "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html?m=1",
       "views": 10,
       "avg_time": "10s"
+    },
+    {
+      "title": "Rassegna Stampa Politica – 9 Ottobre 2026: La rotta della stabilità e il cantiere della Manovra",
+      "url": "www.brunorachiele.it/2026/10/rassegna-stampa-politica-9-ottobre-2026_02085798598.html?m=1",
+      "views": 10,
+      "avg_time": "17s"
     }
   ],
   "geo_data": [
@@ -125,11 +127,6 @@
     {
       "city": "Glenview",
       "country": "United States",
-      "users": 6
-    },
-    {
-      "city": "Catanzaro",
-      "country": "Italy",
       "users": 5
     },
     {
@@ -138,9 +135,14 @@
       "users": 5
     },
     {
+      "city": "Catanzaro",
+      "country": "Italy",
+      "users": 3
+    },
+    {
       "city": "Rome",
       "country": "Italy",
-      "users": 4
+      "users": 3
     },
     {
       "city": "Bologna",
@@ -161,8 +163,8 @@
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 31,
-      "impressions": 330,
+      "clicks": 30,
+      "impressions": 323,
       "position": 3.3
     },
     {
@@ -190,5 +192,5 @@
       "position": 168
     }
   ],
-  "last_updated": "02/11/2026 10:39"
+  "last_updated": "03/11/2026 10:31"
 }
