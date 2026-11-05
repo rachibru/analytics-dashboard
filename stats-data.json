@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 581,
-    "total_clicks": 31,
-    "total_impressions": 338,
+    "total_views": 591,
+    "total_clicks": 30,
+    "total_impressions": 331,
     "avg_position": 50.4
   },
   "chart": {
     "labels": [
-      "21/10",
       "22/10",
       "23/10",
       "24/10",
@@ -21,10 +20,10 @@
       "01/11",
       "02/11",
       "03/11",
-      "04/11"
+      "04/11",
+      "05/11"
     ],
     "data": [
-      1,
       2,
       5,
       9,
@@ -38,7 +37,8 @@
       22,
       26,
       73,
-      4
+      14,
+      11
     ]
   },
   "top_posts": [
@@ -51,13 +51,13 @@
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 106,
+      "views": 105,
       "avg_time": "7s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 52,
+      "views": 53,
       "avg_time": "4s"
     },
     {
@@ -117,7 +117,7 @@
     {
       "city": "Council Bluffs",
       "country": "United States",
-      "users": 11
+      "users": 10
     },
     {
       "city": "Milan",
@@ -125,19 +125,19 @@
       "users": 8
     },
     {
-      "city": "",
-      "country": "",
-      "users": 5
+      "city": "Bengaluru",
+      "country": "India",
+      "users": 4
     },
     {
       "city": "Glenview",
       "country": "United States",
-      "users": 5
+      "users": 4
     },
     {
       "city": "London",
       "country": "United Kingdom",
-      "users": 5
+      "users": 4
     },
     {
       "city": "Catanzaro",
@@ -145,17 +145,17 @@
       "users": 3
     },
     {
-      "city": "Rome",
+      "city": "Genoa",
       "country": "Italy",
       "users": 3
     },
     {
-      "city": "Forest City",
-      "country": "United States",
+      "city": "Naples",
+      "country": "Italy",
       "users": 2
     },
     {
-      "city": "Genoa",
+      "city": "Reggio Calabria",
       "country": "Italy",
       "users": 2
     }
@@ -163,8 +163,8 @@
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 31,
-      "impressions": 334,
+      "clicks": 30,
+      "impressions": 327,
       "position": 3.2
     },
     {
@@ -192,5 +192,5 @@
       "position": 168
     }
   ],
-  "last_updated": "04/11/2026 10:34"
+  "last_updated": "05/11/2026 10:27"
 }
