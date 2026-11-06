@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 591,
-    "total_clicks": 30,
-    "total_impressions": 331,
+    "total_views": 586,
+    "total_clicks": 22,
+    "total_impressions": 262,
     "avg_position": 50.4
   },
   "chart": {
     "labels": [
-      "22/10",
       "23/10",
       "24/10",
       "25/10",
@@ -21,10 +20,10 @@
       "02/11",
       "03/11",
       "04/11",
-      "05/11"
+      "05/11",
+      "06/11"
     ],
     "data": [
-      2,
       5,
       9,
       10,
@@ -38,27 +37,28 @@
       26,
       73,
       14,
-      11
+      17,
+      1
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 130,
+      "views": 126,
       "avg_time": "6s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 105,
+      "views": 102,
       "avg_time": "7s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 53,
-      "avg_time": "4s"
+      "views": 51,
+      "avg_time": "3s"
     },
     {
       "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
@@ -112,12 +112,7 @@
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 12
-    },
-    {
-      "city": "Council Bluffs",
-      "country": "United States",
-      "users": 10
+      "users": 11
     },
     {
       "city": "Milan",
@@ -125,13 +120,23 @@
       "users": 8
     },
     {
+      "city": "Council Bluffs",
+      "country": "United States",
+      "users": 7
+    },
+    {
+      "city": "Ashburn",
+      "country": "United States",
+      "users": 6
+    },
+    {
       "city": "Bengaluru",
       "country": "India",
       "users": 4
     },
     {
-      "city": "Glenview",
-      "country": "United States",
+      "city": "Genoa",
+      "country": "Italy",
       "users": 4
     },
     {
@@ -145,17 +150,12 @@
       "users": 3
     },
     {
-      "city": "Genoa",
-      "country": "Italy",
+      "city": "Glenview",
+      "country": "United States",
       "users": 3
     },
     {
       "city": "Naples",
-      "country": "Italy",
-      "users": 2
-    },
-    {
-      "city": "Reggio Calabria",
       "country": "Italy",
       "users": 2
     }
@@ -163,9 +163,9 @@
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 30,
-      "impressions": 327,
-      "position": 3.2
+      "clicks": 22,
+      "impressions": 258,
+      "position": 2.9
     },
     {
       "query": "cosa ha fatto",
@@ -192,5 +192,5 @@
       "position": 168
     }
   ],
-  "last_updated": "05/11/2026 10:27"
+  "last_updated": "06/11/2026 10:28"
 }
