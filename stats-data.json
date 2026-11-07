@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 586,
+    "total_views": 602,
     "total_clicks": 22,
-    "total_impressions": 262,
-    "avg_position": 50.4
+    "total_impressions": 259,
+    "avg_position": 43.5
   },
   "chart": {
     "labels": [
-      "23/10",
       "24/10",
       "25/10",
       "26/10",
@@ -21,10 +20,10 @@
       "03/11",
       "04/11",
       "05/11",
-      "06/11"
+      "06/11",
+      "07/11"
     ],
     "data": [
-      5,
       9,
       10,
       13,
@@ -38,27 +37,28 @@
       73,
       14,
       17,
-      1
+      19,
+      7
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 126,
+      "views": 127,
       "avg_time": "6s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 102,
+      "views": 111,
       "avg_time": "7s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 51,
-      "avg_time": "3s"
+      "views": 48,
+      "avg_time": "2s"
     },
     {
       "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
@@ -91,16 +91,16 @@
       "avg_time": "2s"
     },
     {
+      "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html",
+      "views": 12,
+      "avg_time": "6s"
+    },
+    {
       "title": "#primepagine",
       "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html?m=1",
       "views": 10,
       "avg_time": "10s"
-    },
-    {
-      "title": "Rassegna Stampa Politica – 9 Ottobre 2026: La rotta della stabilità e il cantiere della Manovra",
-      "url": "www.brunorachiele.it/2026/10/rassegna-stampa-politica-9-ottobre-2026_02085798598.html?m=1",
-      "views": 10,
-      "avg_time": "17s"
     }
   ],
   "geo_data": [
@@ -120,12 +120,12 @@
       "users": 8
     },
     {
-      "city": "Council Bluffs",
+      "city": "Ashburn",
       "country": "United States",
-      "users": 7
+      "users": 6
     },
     {
-      "city": "Ashburn",
+      "city": "Council Bluffs",
       "country": "United States",
       "users": 6
     },
@@ -145,6 +145,11 @@
       "users": 4
     },
     {
+      "city": "",
+      "country": "",
+      "users": 3
+    },
+    {
       "city": "Catanzaro",
       "country": "Italy",
       "users": 3
@@ -152,11 +157,6 @@
     {
       "city": "Glenview",
       "country": "United States",
-      "users": 3
-    },
-    {
-      "city": "Naples",
-      "country": "Italy",
       "users": 2
     }
   ],
@@ -164,8 +164,8 @@
     {
       "query": "bruno rachiele",
       "clicks": 22,
-      "impressions": 258,
-      "position": 2.9
+      "impressions": 254,
+      "position": 2.8
     },
     {
       "query": "cosa ha fatto",
@@ -186,11 +186,17 @@
       "position": 50
     },
     {
+      "query": "rachiele",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 9
+    },
+    {
       "query": "vannacci sondaggi",
       "clicks": 0,
       "impressions": 1,
       "position": 168
     }
   ],
-  "last_updated": "06/11/2026 10:28"
+  "last_updated": "07/11/2026 09:41"
 }
