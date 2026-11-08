@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 602,
-    "total_clicks": 22,
-    "total_impressions": 259,
-    "avg_position": 43.5
+    "total_views": 655,
+    "total_clicks": 24,
+    "total_impressions": 222,
+    "avg_position": 43.4
   },
   "chart": {
     "labels": [
-      "24/10",
       "25/10",
       "26/10",
       "27/10",
@@ -21,10 +20,10 @@
       "04/11",
       "05/11",
       "06/11",
-      "07/11"
+      "07/11",
+      "08/11"
     ],
     "data": [
-      9,
       10,
       13,
       4,
@@ -38,27 +37,28 @@
       14,
       17,
       19,
-      7
+      74,
+      11
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
-      "url": "www.brunorachiele.it/?m=1",
+      "url": "www.brunorachiele.it/",
       "views": 127,
       "avg_time": "6s"
     },
     {
       "title": "brunorachiele.it",
-      "url": "www.brunorachiele.it/",
-      "views": 111,
-      "avg_time": "7s"
+      "url": "www.brunorachiele.it/?m=1",
+      "views": 125,
+      "avg_time": "6s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 48,
-      "avg_time": "2s"
+      "views": 46,
+      "avg_time": "1s"
     },
     {
       "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
@@ -79,6 +79,12 @@
       "avg_time": "7s"
     },
     {
+      "title": "#primepagine del 6 novembre 2026",
+      "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html",
+      "views": 17,
+      "avg_time": "6s"
+    },
+    {
       "title": "#primepagine del 9 ottobre 2026",
       "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html?m=1",
       "views": 15,
@@ -91,28 +97,22 @@
       "avg_time": "2s"
     },
     {
-      "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
-      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html",
+      "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html",
       "views": 12,
-      "avg_time": "6s"
-    },
-    {
-      "title": "#primepagine",
-      "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html?m=1",
-      "views": 10,
-      "avg_time": "10s"
+      "avg_time": "20s"
     }
   ],
   "geo_data": [
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 31
+      "users": 32
     },
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 11
+      "users": 12
     },
     {
       "city": "Milan",
@@ -125,9 +125,14 @@
       "users": 6
     },
     {
+      "city": "Genoa",
+      "country": "Italy",
+      "users": 6
+    },
+    {
       "city": "Council Bluffs",
       "country": "United States",
-      "users": 6
+      "users": 5
     },
     {
       "city": "Bengaluru",
@@ -135,7 +140,7 @@
       "users": 4
     },
     {
-      "city": "Genoa",
+      "city": "Catanzaro",
       "country": "Italy",
       "users": 4
     },
@@ -145,27 +150,27 @@
       "users": 4
     },
     {
-      "city": "",
-      "country": "",
-      "users": 3
-    },
-    {
-      "city": "Catanzaro",
+      "city": "Naples",
       "country": "Italy",
       "users": 3
     },
     {
-      "city": "Glenview",
-      "country": "United States",
-      "users": 2
+      "city": "Reggio Calabria",
+      "country": "Italy",
+      "users": 3
+    },
+    {
+      "city": "Rome",
+      "country": "Italy",
+      "users": 3
     }
   ],
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 22,
-      "impressions": 254,
-      "position": 2.8
+      "clicks": 24,
+      "impressions": 217,
+      "position": 2.4
     },
     {
       "query": "cosa ha fatto",
@@ -198,5 +203,5 @@
       "position": 168
     }
   ],
-  "last_updated": "07/11/2026 09:41"
+  "last_updated": "08/11/2026 09:56"
 }
