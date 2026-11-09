@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 655,
-    "total_clicks": 24,
-    "total_impressions": 222,
+    "total_views": 624,
+    "total_clicks": 25,
+    "total_impressions": 216,
     "avg_position": 43.4
   },
   "chart": {
     "labels": [
-      "25/10",
       "26/10",
       "27/10",
       "28/10",
@@ -21,10 +20,10 @@
       "05/11",
       "06/11",
       "07/11",
-      "08/11"
+      "08/11",
+      "09/11"
     ],
     "data": [
-      10,
       13,
       4,
       2,
@@ -38,27 +37,28 @@
       17,
       19,
       74,
-      11
+      39,
+      2
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 127,
+      "views": 135,
       "avg_time": "6s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 125,
-      "avg_time": "6s"
+      "views": 113,
+      "avg_time": "7s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 46,
-      "avg_time": "1s"
+      "views": 49,
+      "avg_time": "4s"
     },
     {
       "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
@@ -85,12 +85,6 @@
       "avg_time": "6s"
     },
     {
-      "title": "#primepagine del 9 ottobre 2026",
-      "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html?m=1",
-      "views": 15,
-      "avg_time": "10s"
-    },
-    {
       "title": "Rassegna Stampa dell'11 Ottobre 2026: Stabilità istituzionale e primato del Centrodestra verso il traguardo di legislatura",
       "url": "www.brunorachiele.it/2026/10/rassegna-stampa-dell11-ottobre-2026.html?m=1",
       "views": 13,
@@ -99,8 +93,14 @@
     {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html",
+      "views": 13,
+      "avg_time": "25s"
+    },
+    {
+      "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html",
       "views": 12,
-      "avg_time": "20s"
+      "avg_time": "6s"
     }
   ],
   "geo_data": [
@@ -112,7 +112,7 @@
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 12
+      "users": 11
     },
     {
       "city": "Milan",
@@ -120,19 +120,14 @@
       "users": 8
     },
     {
+      "city": "Genoa",
+      "country": "Italy",
+      "users": 7
+    },
+    {
       "city": "Ashburn",
       "country": "United States",
       "users": 6
-    },
-    {
-      "city": "Genoa",
-      "country": "Italy",
-      "users": 6
-    },
-    {
-      "city": "Council Bluffs",
-      "country": "United States",
-      "users": 5
     },
     {
       "city": "Bengaluru",
@@ -142,6 +137,11 @@
     {
       "city": "Catanzaro",
       "country": "Italy",
+      "users": 4
+    },
+    {
+      "city": "Council Bluffs",
+      "country": "United States",
       "users": 4
     },
     {
@@ -168,9 +168,9 @@
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 24,
-      "impressions": 217,
-      "position": 2.4
+      "clicks": 25,
+      "impressions": 211,
+      "position": 2.5
     },
     {
       "query": "cosa ha fatto",
@@ -203,5 +203,5 @@
       "position": 168
     }
   ],
-  "last_updated": "08/11/2026 09:56"
+  "last_updated": "09/11/2026 10:59"
 }
