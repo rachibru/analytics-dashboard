@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 624,
-    "total_clicks": 25,
-    "total_impressions": 216,
-    "avg_position": 43.4
+    "total_views": 646,
+    "total_clicks": 26,
+    "total_impressions": 217,
+    "avg_position": 34.6
   },
   "chart": {
     "labels": [
-      "26/10",
       "27/10",
       "28/10",
       "29/10",
@@ -21,10 +20,10 @@
       "06/11",
       "07/11",
       "08/11",
-      "09/11"
+      "09/11",
+      "10/11"
     ],
     "data": [
-      13,
       4,
       2,
       14,
@@ -38,20 +37,21 @@
       19,
       74,
       39,
-      2
+      56,
+      16
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 135,
-      "avg_time": "6s"
+      "views": 170,
+      "avg_time": "5s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 113,
+      "views": 102,
       "avg_time": "7s"
     },
     {
@@ -73,15 +73,21 @@
       "avg_time": "7s"
     },
     {
-      "title": "Sondaggio Politico 10 ottobre 2026 – Supermedia Bruno Rachiele",
-      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-10-ottobre-2026-supermedia.html?m=1",
-      "views": 22,
-      "avg_time": "7s"
+      "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html",
+      "views": 18,
+      "avg_time": "19s"
     },
     {
       "title": "#primepagine del 6 novembre 2026",
       "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html",
       "views": 17,
+      "avg_time": "6s"
+    },
+    {
+      "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html",
+      "views": 14,
       "avg_time": "6s"
     },
     {
@@ -92,18 +98,17 @@
     },
     {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
-      "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html",
-      "views": 13,
-      "avg_time": "25s"
-    },
-    {
-      "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
-      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html",
-      "views": 12,
-      "avg_time": "6s"
+      "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html?m=1",
+      "views": 11,
+      "avg_time": "11s"
     }
   ],
   "geo_data": [
+    {
+      "city": "",
+      "country": "",
+      "users": 32
+    },
     {
       "city": "Boardman",
       "country": "United States",
@@ -115,19 +120,24 @@
       "users": 11
     },
     {
-      "city": "Milan",
-      "country": "Italy",
-      "users": 8
-    },
-    {
       "city": "Genoa",
       "country": "Italy",
-      "users": 7
+      "users": 8
     },
     {
       "city": "Ashburn",
       "country": "United States",
       "users": 6
+    },
+    {
+      "city": "Milan",
+      "country": "Italy",
+      "users": 6
+    },
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "users": 5
     },
     {
       "city": "Bengaluru",
@@ -137,21 +147,6 @@
     {
       "city": "Catanzaro",
       "country": "Italy",
-      "users": 4
-    },
-    {
-      "city": "Council Bluffs",
-      "country": "United States",
-      "users": 4
-    },
-    {
-      "city": "London",
-      "country": "United Kingdom",
-      "users": 4
-    },
-    {
-      "city": "Naples",
-      "country": "Italy",
       "users": 3
     },
     {
@@ -160,17 +155,17 @@
       "users": 3
     },
     {
-      "city": "Rome",
-      "country": "Italy",
+      "city": "Seville",
+      "country": "Spain",
       "users": 3
     }
   ],
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 25,
-      "impressions": 211,
-      "position": 2.5
+      "clicks": 26,
+      "impressions": 209,
+      "position": 2.4
     },
     {
       "query": "cosa ha fatto",
@@ -197,11 +192,23 @@
       "position": 9
     },
     {
+      "query": "sondaggi politici 7 novembre 2026",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 8.5
+    },
+    {
+      "query": "sondaggi politici novembre 2026",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 8
+    },
+    {
       "query": "vannacci sondaggi",
       "clicks": 0,
       "impressions": 1,
       "position": 168
     }
   ],
-  "last_updated": "09/11/2026 10:59"
+  "last_updated": "10/11/2026 10:50"
 }
