@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 646,
-    "total_clicks": 26,
-    "total_impressions": 217,
+    "total_views": 627,
+    "total_clicks": 25,
+    "total_impressions": 211,
     "avg_position": 34.6
   },
   "chart": {
     "labels": [
-      "27/10",
       "28/10",
       "29/10",
       "30/10",
@@ -21,10 +20,10 @@
       "07/11",
       "08/11",
       "09/11",
-      "10/11"
+      "10/11",
+      "11/11"
     ],
     "data": [
-      4,
       2,
       14,
       9,
@@ -38,20 +37,21 @@
       74,
       39,
       56,
-      16
+      25,
+      11
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 170,
+      "views": 169,
       "avg_time": "5s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 102,
+      "views": 103,
       "avg_time": "7s"
     },
     {
@@ -75,8 +75,8 @@
     {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html",
-      "views": 18,
-      "avg_time": "19s"
+      "views": 19,
+      "avg_time": "21s"
     },
     {
       "title": "#primepagine del 6 novembre 2026",
@@ -91,24 +91,19 @@
       "avg_time": "6s"
     },
     {
-      "title": "Rassegna Stampa dell'11 Ottobre 2026: Stabilità istituzionale e primato del Centrodestra verso il traguardo di legislatura",
-      "url": "www.brunorachiele.it/2026/10/rassegna-stampa-dell11-ottobre-2026.html?m=1",
-      "views": 13,
-      "avg_time": "2s"
-    },
-    {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html?m=1",
-      "views": 11,
-      "avg_time": "11s"
+      "views": 12,
+      "avg_time": "10s"
+    },
+    {
+      "title": "Supermedia Gradimento Leader Politici - 09 Novembre 2026",
+      "url": "www.brunorachiele.it/2026/11/gradimento-leader-politici-09-novembre-2026.html",
+      "views": 9,
+      "avg_time": "7s"
     }
   ],
   "geo_data": [
-    {
-      "city": "",
-      "country": "",
-      "users": 32
-    },
     {
       "city": "Boardman",
       "country": "United States",
@@ -117,26 +112,26 @@
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 11
-    },
-    {
-      "city": "Genoa",
-      "country": "Italy",
-      "users": 8
+      "users": 10
     },
     {
       "city": "Ashburn",
       "country": "United States",
-      "users": 6
+      "users": 9
     },
     {
-      "city": "Milan",
+      "city": "Genoa",
       "country": "Italy",
-      "users": 6
+      "users": 9
     },
     {
       "city": "London",
       "country": "United Kingdom",
+      "users": 5
+    },
+    {
+      "city": "Milan",
+      "country": "Italy",
       "users": 5
     },
     {
@@ -158,14 +153,19 @@
       "city": "Seville",
       "country": "Spain",
       "users": 3
+    },
+    {
+      "city": "Castrovillari",
+      "country": "Italy",
+      "users": 2
     }
   ],
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 26,
-      "impressions": 209,
-      "position": 2.4
+      "clicks": 25,
+      "impressions": 203,
+      "position": 2.3
     },
     {
       "query": "cosa ha fatto",
@@ -210,5 +210,5 @@
       "position": 168
     }
   ],
-  "last_updated": "10/11/2026 10:50"
+  "last_updated": "11/11/2026 10:26"
 }
