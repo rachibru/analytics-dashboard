@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 627,
-    "total_clicks": 25,
-    "total_impressions": 211,
+    "total_views": 636,
+    "total_clicks": 23,
+    "total_impressions": 204,
     "avg_position": 34.6
   },
   "chart": {
     "labels": [
-      "28/10",
       "29/10",
       "30/10",
       "31/10",
@@ -21,10 +20,10 @@
       "08/11",
       "09/11",
       "10/11",
-      "11/11"
+      "11/11",
+      "12/11"
     ],
     "data": [
-      2,
       14,
       9,
       56,
@@ -38,26 +37,27 @@
       39,
       56,
       25,
-      11
+      42,
+      2
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 169,
+      "views": 177,
       "avg_time": "5s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 103,
+      "views": 102,
       "avg_time": "7s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 49,
+      "views": 48,
       "avg_time": "4s"
     },
     {
@@ -97,10 +97,10 @@
       "avg_time": "10s"
     },
     {
-      "title": "Supermedia Gradimento Leader Politici - 09 Novembre 2026",
-      "url": "www.brunorachiele.it/2026/11/gradimento-leader-politici-09-novembre-2026.html",
-      "views": 9,
-      "avg_time": "7s"
+      "title": "Sondaggio Politico 17 ottobre 2026 – Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/10/sondaggio-politico-17-ottobre-2026-supermedia.html",
+      "views": 12,
+      "avg_time": "39s"
     }
   ],
   "geo_data": [
@@ -125,18 +125,13 @@
       "users": 9
     },
     {
-      "city": "London",
-      "country": "United Kingdom",
-      "users": 5
+      "city": "Bengaluru",
+      "country": "India",
+      "users": 4
     },
     {
       "city": "Milan",
       "country": "Italy",
-      "users": 5
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
       "users": 4
     },
     {
@@ -145,8 +140,8 @@
       "users": 3
     },
     {
-      "city": "Reggio Calabria",
-      "country": "Italy",
+      "city": "London",
+      "country": "United Kingdom",
       "users": 3
     },
     {
@@ -158,13 +153,23 @@
       "city": "Castrovillari",
       "country": "Italy",
       "users": 2
+    },
+    {
+      "city": "Palermo",
+      "country": "Italy",
+      "users": 2
+    },
+    {
+      "city": "Reggio Calabria",
+      "country": "Italy",
+      "users": 2
     }
   ],
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 25,
-      "impressions": 203,
+      "clicks": 23,
+      "impressions": 196,
       "position": 2.3
     },
     {
@@ -210,5 +215,5 @@
       "position": 168
     }
   ],
-  "last_updated": "11/11/2026 10:26"
+  "last_updated": "12/11/2026 10:44"
 }
