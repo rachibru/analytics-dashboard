@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 894,
+    "total_views": 939,
     "total_clicks": 15,
-    "total_impressions": 173,
+    "total_impressions": 172,
     "avg_position": 34.0
   },
   "chart": {
     "labels": [
-      "03/11",
       "04/11",
       "05/11",
       "06/11",
@@ -21,10 +20,10 @@
       "14/11",
       "15/11",
       "16/11",
-      "17/11"
+      "17/11",
+      "18/11"
     ],
     "data": [
-      73,
       14,
       17,
       19,
@@ -38,26 +37,27 @@
       196,
       31,
       32,
-      3
+      37,
+      14
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 254,
+      "views": 270,
       "avg_time": "6s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 110,
+      "views": 121,
       "avg_time": "6s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 51,
+      "views": 52,
       "avg_time": "10s"
     },
     {
@@ -79,22 +79,22 @@
       "avg_time": "20s"
     },
     {
+      "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html",
+      "views": 21,
+      "avg_time": "20s"
+    },
+    {
       "title": "Contatti",
       "url": "www.brunorachiele.it/p/contatti.html",
-      "views": 19,
-      "avg_time": "40s"
+      "views": 20,
+      "avg_time": "38s"
     },
     {
       "title": "Scenari Nuova Legge Elettorale Stabilicum - 11 Novembre 2026",
       "url": "www.brunorachiele.it/2026/11/scenari-legge-elettorale-stabilicum-09-novembre-2026.html",
-      "views": 19,
-      "avg_time": "16s"
-    },
-    {
-      "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
-      "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html",
-      "views": 18,
-      "avg_time": "22s"
+      "views": 20,
+      "avg_time": "15s"
     },
     {
       "title": "#primepagine del 6 novembre 2026",
@@ -107,12 +107,22 @@
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 29
+      "users": 28
     },
     {
       "city": "Genoa",
       "country": "Italy",
-      "users": 15
+      "users": 16
+    },
+    {
+      "city": "Malaga",
+      "country": "Spain",
+      "users": 11
+    },
+    {
+      "city": "Milan",
+      "country": "Italy",
+      "users": 11
     },
     {
       "city": "Ashburn",
@@ -120,17 +130,7 @@
       "users": 9
     },
     {
-      "city": "Malaga",
-      "country": "Spain",
-      "users": 9
-    },
-    {
       "city": "Catanzaro",
-      "country": "Italy",
-      "users": 8
-    },
-    {
-      "city": "Milan",
       "country": "Italy",
       "users": 8
     },
@@ -156,7 +156,7 @@
     },
     {
       "city": "",
-      "country": "Italy",
+      "country": "Poland",
       "users": 2
     },
     {
@@ -169,7 +169,7 @@
     {
       "query": "bruno rachiele",
       "clicks": 15,
-      "impressions": 161,
+      "impressions": 160,
       "position": 2.3
     },
     {
@@ -227,5 +227,5 @@
       "position": 168
     }
   ],
-  "last_updated": "17/11/2026 11:32"
+  "last_updated": "18/11/2026 11:15"
 }
