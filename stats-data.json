@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 939,
+    "total_views": 949,
     "total_clicks": 15,
-    "total_impressions": 172,
+    "total_impressions": 177,
     "avg_position": 34.0
   },
   "chart": {
     "labels": [
-      "04/11",
       "05/11",
       "06/11",
       "07/11",
@@ -21,10 +20,10 @@
       "15/11",
       "16/11",
       "17/11",
-      "18/11"
+      "18/11",
+      "19/11"
     ],
     "data": [
-      14,
       17,
       19,
       74,
@@ -38,26 +37,27 @@
       31,
       32,
       37,
-      14
+      21,
+      11
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 270,
+      "views": 275,
       "avg_time": "6s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 121,
+      "views": 124,
       "avg_time": "6s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 52,
+      "views": 51,
       "avg_time": "10s"
     },
     {
@@ -107,7 +107,7 @@
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 28
+      "users": 27
     },
     {
       "city": "Genoa",
@@ -117,7 +117,7 @@
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 11
+      "users": 12
     },
     {
       "city": "Milan",
@@ -130,18 +130,23 @@
       "users": 9
     },
     {
-      "city": "Catanzaro",
+      "city": "Rome",
       "country": "Italy",
-      "users": 8
+      "users": 9
     },
     {
-      "city": "Rome",
+      "city": "Catanzaro",
       "country": "Italy",
       "users": 8
     },
     {
       "city": "Bengaluru",
       "country": "India",
+      "users": 4
+    },
+    {
+      "city": "Singapore",
+      "country": "Singapore",
       "users": 4
     },
     {
@@ -156,12 +161,7 @@
     },
     {
       "city": "",
-      "country": "Poland",
-      "users": 2
-    },
-    {
-      "city": "Amsterdam",
-      "country": "Netherlands",
+      "country": "Italy",
       "users": 2
     }
   ],
@@ -169,7 +169,7 @@
     {
       "query": "bruno rachiele",
       "clicks": 15,
-      "impressions": 160,
+      "impressions": 165,
       "position": 2.3
     },
     {
@@ -227,5 +227,5 @@
       "position": 168
     }
   ],
-  "last_updated": "18/11/2026 11:15"
+  "last_updated": "19/11/2026 11:14"
 }
