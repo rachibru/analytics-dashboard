@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 949,
-    "total_clicks": 15,
-    "total_impressions": 177,
-    "avg_position": 34.0
+    "total_views": 1003,
+    "total_clicks": 17,
+    "total_impressions": 178,
+    "avg_position": 17.6
   },
   "chart": {
     "labels": [
-      "05/11",
       "06/11",
       "07/11",
       "08/11",
@@ -21,10 +20,10 @@
       "16/11",
       "17/11",
       "18/11",
-      "19/11"
+      "19/11",
+      "20/11"
     ],
     "data": [
-      17,
       19,
       74,
       39,
@@ -38,27 +37,28 @@
       32,
       37,
       21,
-      11
+      66,
+      1
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 275,
-      "avg_time": "6s"
+      "views": 285,
+      "avg_time": "7s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 124,
+      "views": 126,
       "avg_time": "6s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 51,
-      "avg_time": "10s"
+      "views": 53,
+      "avg_time": "13s"
     },
     {
       "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
@@ -71,6 +71,12 @@
       "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html?m=1",
       "views": 31,
       "avg_time": "14s"
+    },
+    {
+      "title": "Bruno Rachiele | Biografia Ufficiale, Editore, Attivismo Politico e Libri",
+      "url": "bio.brunorachiele.it/",
+      "views": 23,
+      "avg_time": "8s"
     },
     {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
@@ -95,19 +101,13 @@
       "url": "www.brunorachiele.it/2026/11/scenari-legge-elettorale-stabilicum-09-novembre-2026.html",
       "views": 20,
       "avg_time": "15s"
-    },
-    {
-      "title": "#primepagine del 6 novembre 2026",
-      "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html",
-      "views": 17,
-      "avg_time": "6s"
     }
   ],
   "geo_data": [
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 27
+      "users": 26
     },
     {
       "city": "Genoa",
@@ -125,13 +125,13 @@
       "users": 11
     },
     {
-      "city": "Ashburn",
-      "country": "United States",
-      "users": 9
-    },
-    {
       "city": "Rome",
       "country": "Italy",
+      "users": 10
+    },
+    {
+      "city": "Ashburn",
+      "country": "United States",
       "users": 9
     },
     {
@@ -150,6 +150,11 @@
       "users": 4
     },
     {
+      "city": "",
+      "country": "",
+      "users": 3
+    },
+    {
       "city": "Naples",
       "country": "Italy",
       "users": 3
@@ -158,18 +163,13 @@
       "city": "Seville",
       "country": "Spain",
       "users": 3
-    },
-    {
-      "city": "",
-      "country": "Italy",
-      "users": 2
     }
   ],
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 15,
-      "impressions": 165,
+      "clicks": 17,
+      "impressions": 166,
       "position": 2.3
     },
     {
@@ -197,6 +197,12 @@
       "position": 8
     },
     {
+      "query": "quindi chi vincerebbe",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 4
+    },
+    {
       "query": "rachiele",
       "clicks": 0,
       "impressions": 1,
@@ -219,13 +225,7 @@
       "clicks": 0,
       "impressions": 1,
       "position": 8
-    },
-    {
-      "query": "vannacci sondaggi",
-      "clicks": 0,
-      "impressions": 1,
-      "position": 168
     }
   ],
-  "last_updated": "19/11/2026 11:14"
+  "last_updated": "20/11/2026 10:59"
 }
