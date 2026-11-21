@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 1003,
+    "total_views": 1054,
     "total_clicks": 17,
-    "total_impressions": 178,
-    "avg_position": 17.6
+    "total_impressions": 197,
+    "avg_position": 17.3
   },
   "chart": {
     "labels": [
-      "06/11",
       "07/11",
       "08/11",
       "09/11",
@@ -21,10 +20,10 @@
       "17/11",
       "18/11",
       "19/11",
-      "20/11"
+      "20/11",
+      "21/11"
     ],
     "data": [
-      19,
       74,
       39,
       56,
@@ -38,27 +37,28 @@
       37,
       21,
       66,
-      1
+      45,
+      8
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 285,
-      "avg_time": "7s"
+      "views": 298,
+      "avg_time": "8s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 126,
+      "views": 130,
       "avg_time": "6s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 53,
-      "avg_time": "13s"
+      "views": 52,
+      "avg_time": "14s"
     },
     {
       "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
@@ -75,8 +75,8 @@
     {
       "title": "Bruno Rachiele | Biografia Ufficiale, Editore, Attivismo Politico e Libri",
       "url": "bio.brunorachiele.it/",
-      "views": 23,
-      "avg_time": "8s"
+      "views": 30,
+      "avg_time": "16s"
     },
     {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
@@ -87,8 +87,8 @@
     {
       "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html",
-      "views": 21,
-      "avg_time": "20s"
+      "views": 22,
+      "avg_time": "19s"
     },
     {
       "title": "Contatti",
@@ -107,7 +107,7 @@
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 26
+      "users": 31
     },
     {
       "city": "Genoa",
@@ -117,7 +117,7 @@
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 12
+      "users": 13
     },
     {
       "city": "Milan",
@@ -127,7 +127,7 @@
     {
       "city": "Rome",
       "country": "Italy",
-      "users": 10
+      "users": 11
     },
     {
       "city": "Ashburn",
@@ -140,6 +140,11 @@
       "users": 8
     },
     {
+      "city": "Naples",
+      "country": "Italy",
+      "users": 5
+    },
+    {
       "city": "Bengaluru",
       "country": "India",
       "users": 4
@@ -148,16 +153,6 @@
       "city": "Singapore",
       "country": "Singapore",
       "users": 4
-    },
-    {
-      "city": "",
-      "country": "",
-      "users": 3
-    },
-    {
-      "city": "Naples",
-      "country": "Italy",
-      "users": 3
     },
     {
       "city": "Seville",
@@ -169,14 +164,14 @@
     {
       "query": "bruno rachiele",
       "clicks": 17,
-      "impressions": 166,
-      "position": 2.3
+      "impressions": 184,
+      "position": 2.1
     },
     {
       "query": "bruno rachiele politico",
       "clicks": 0,
-      "impressions": 3,
-      "position": 14.3
+      "impressions": 4,
+      "position": 11
     },
     {
       "query": "cosa ha fatto",
@@ -227,5 +222,5 @@
       "position": 8
     }
   ],
-  "last_updated": "20/11/2026 10:59"
+  "last_updated": "21/11/2026 10:43"
 }
