@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 1054,
-    "total_clicks": 17,
-    "total_impressions": 197,
+    "total_views": 1236,
+    "total_clicks": 18,
+    "total_impressions": 205,
     "avg_position": 17.3
   },
   "chart": {
     "labels": [
-      "07/11",
       "08/11",
       "09/11",
       "10/11",
@@ -21,10 +20,10 @@
       "18/11",
       "19/11",
       "20/11",
-      "21/11"
+      "21/11",
+      "22/11"
     ],
     "data": [
-      74,
       39,
       56,
       25,
@@ -38,32 +37,33 @@
       21,
       66,
       45,
-      8
+      150,
+      42
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 298,
+      "views": 356,
       "avg_time": "8s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 130,
+      "views": 159,
       "avg_time": "6s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 52,
+      "views": 51,
       "avg_time": "14s"
     },
     {
       "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html?m=1",
-      "views": 38,
+      "views": 40,
       "avg_time": "13s"
     },
     {
@@ -79,35 +79,35 @@
       "avg_time": "16s"
     },
     {
+      "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
+      "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html",
+      "views": 24,
+      "avg_time": "18s"
+    },
+    {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html",
       "views": 23,
       "avg_time": "20s"
     },
     {
-      "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
-      "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html",
-      "views": 22,
-      "avg_time": "19s"
+      "title": "#primepagine del 22 novembre 2026",
+      "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html",
+      "views": 20,
+      "avg_time": "4s"
     },
     {
       "title": "Contatti",
       "url": "www.brunorachiele.it/p/contatti.html",
       "views": 20,
       "avg_time": "38s"
-    },
-    {
-      "title": "Scenari Nuova Legge Elettorale Stabilicum - 11 Novembre 2026",
-      "url": "www.brunorachiele.it/2026/11/scenari-legge-elettorale-stabilicum-09-novembre-2026.html",
-      "views": 20,
-      "avg_time": "15s"
     }
   ],
   "geo_data": [
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 31
+      "users": 41
     },
     {
       "city": "Genoa",
@@ -117,7 +117,7 @@
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 13
+      "users": 14
     },
     {
       "city": "Milan",
@@ -130,14 +130,14 @@
       "users": 11
     },
     {
+      "city": "Catanzaro",
+      "country": "Italy",
+      "users": 10
+    },
+    {
       "city": "Ashburn",
       "country": "United States",
       "users": 9
-    },
-    {
-      "city": "Catanzaro",
-      "country": "Italy",
-      "users": 8
     },
     {
       "city": "Naples",
@@ -150,21 +150,26 @@
       "users": 4
     },
     {
+      "city": "Forest City",
+      "country": "United States",
+      "users": 4
+    },
+    {
       "city": "Singapore",
       "country": "Singapore",
       "users": 4
     },
     {
-      "city": "Seville",
-      "country": "Spain",
+      "city": "Florence",
+      "country": "Italy",
       "users": 3
     }
   ],
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 17,
-      "impressions": 184,
+      "clicks": 18,
+      "impressions": 192,
       "position": 2.1
     },
     {
@@ -222,5 +227,5 @@
       "position": 8
     }
   ],
-  "last_updated": "21/11/2026 10:43"
+  "last_updated": "22/11/2026 10:49"
 }
