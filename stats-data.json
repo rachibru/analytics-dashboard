@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 1236,
-    "total_clicks": 18,
-    "total_impressions": 205,
-    "avg_position": 17.3
+    "total_views": 1307,
+    "total_clicks": 21,
+    "total_impressions": 208,
+    "avg_position": 17.2
   },
   "chart": {
     "labels": [
-      "08/11",
       "09/11",
       "10/11",
       "11/11",
@@ -21,10 +20,10 @@
       "19/11",
       "20/11",
       "21/11",
-      "22/11"
+      "22/11",
+      "23/11"
     ],
     "data": [
-      39,
       56,
       25,
       42,
@@ -38,14 +37,15 @@
       66,
       45,
       150,
-      42
+      64,
+      54
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 356,
+      "views": 360,
       "avg_time": "8s"
     },
     {
@@ -57,8 +57,8 @@
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 51,
-      "avg_time": "14s"
+      "views": 48,
+      "avg_time": "15s"
     },
     {
       "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
@@ -67,22 +67,22 @@
       "avg_time": "13s"
     },
     {
+      "title": "Bruno Rachiele | Biografia Ufficiale, Editore, Attivismo Politico e Libri",
+      "url": "bio.brunorachiele.it/",
+      "views": 34,
+      "avg_time": "14s"
+    },
+    {
       "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/10/sondaggio-politico-31-ottobre-2026-supermedia.html?m=1",
       "views": 31,
       "avg_time": "14s"
     },
     {
-      "title": "Bruno Rachiele | Biografia Ufficiale, Editore, Attivismo Politico e Libri",
-      "url": "bio.brunorachiele.it/",
-      "views": 30,
-      "avg_time": "16s"
-    },
-    {
       "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html",
-      "views": 24,
-      "avg_time": "18s"
+      "views": 27,
+      "avg_time": "16s"
     },
     {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
@@ -93,21 +93,21 @@
     {
       "title": "#primepagine del 22 novembre 2026",
       "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html",
-      "views": 20,
-      "avg_time": "4s"
+      "views": 22,
+      "avg_time": "3s"
     },
     {
       "title": "Contatti",
       "url": "www.brunorachiele.it/p/contatti.html",
-      "views": 20,
-      "avg_time": "38s"
+      "views": 22,
+      "avg_time": "34s"
     }
   ],
   "geo_data": [
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 41
+      "users": 40
     },
     {
       "city": "Genoa",
@@ -117,12 +117,12 @@
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 14
+      "users": 15
     },
     {
       "city": "Milan",
       "country": "Italy",
-      "users": 11
+      "users": 13
     },
     {
       "city": "Rome",
@@ -168,9 +168,9 @@
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 18,
-      "impressions": 192,
-      "position": 2.1
+      "clicks": 21,
+      "impressions": 195,
+      "position": 2.0
     },
     {
       "query": "bruno rachiele politico",
@@ -227,5 +227,5 @@
       "position": 8
     }
   ],
-  "last_updated": "22/11/2026 10:49"
+  "last_updated": "23/11/2026 11:55"
 }
