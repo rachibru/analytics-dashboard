@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 1307,
-    "total_clicks": 21,
-    "total_impressions": 208,
-    "avg_position": 17.2
+    "total_views": 1346,
+    "total_clicks": 22,
+    "total_impressions": 213,
+    "avg_position": 15.7
   },
   "chart": {
     "labels": [
-      "09/11",
       "10/11",
       "11/11",
       "12/11",
@@ -21,10 +20,10 @@
       "20/11",
       "21/11",
       "22/11",
-      "23/11"
+      "23/11",
+      "24/11"
     ],
     "data": [
-      56,
       25,
       42,
       12,
@@ -38,26 +37,27 @@
       45,
       150,
       64,
-      54
+      85,
+      17
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 360,
+      "views": 370,
       "avg_time": "8s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 159,
+      "views": 162,
       "avg_time": "6s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 48,
+      "views": 47,
       "avg_time": "15s"
     },
     {
@@ -69,8 +69,8 @@
     {
       "title": "Bruno Rachiele | Biografia Ufficiale, Editore, Attivismo Politico e Libri",
       "url": "bio.brunorachiele.it/",
-      "views": 34,
-      "avg_time": "14s"
+      "views": 38,
+      "avg_time": "15s"
     },
     {
       "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
@@ -85,6 +85,12 @@
       "avg_time": "16s"
     },
     {
+      "title": "Contatti",
+      "url": "www.brunorachiele.it/p/contatti.html",
+      "views": 23,
+      "avg_time": "34s"
+    },
+    {
       "title": "Sondaggio Politico 07 novembre 2026 – Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/sondaggio-politico-07-novembre-2026.html",
       "views": 23,
@@ -95,24 +101,18 @@
       "url": "www.brunorachiele.it/p/prime-pagine-dei-giornali.html",
       "views": 22,
       "avg_time": "3s"
-    },
-    {
-      "title": "Contatti",
-      "url": "www.brunorachiele.it/p/contatti.html",
-      "views": 22,
-      "avg_time": "34s"
     }
   ],
   "geo_data": [
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 40
+      "users": 42
     },
     {
       "city": "Genoa",
       "country": "Italy",
-      "users": 16
+      "users": 18
     },
     {
       "city": "Malaga",
@@ -130,13 +130,13 @@
       "users": 11
     },
     {
-      "city": "Catanzaro",
-      "country": "Italy",
-      "users": 10
-    },
-    {
       "city": "Ashburn",
       "country": "United States",
+      "users": 9
+    },
+    {
+      "city": "Catanzaro",
+      "country": "Italy",
       "users": 9
     },
     {
@@ -155,12 +155,17 @@
       "users": 4
     },
     {
+      "city": "London",
+      "country": "United Kingdom",
+      "users": 4
+    },
+    {
       "city": "Singapore",
       "country": "Singapore",
       "users": 4
     },
     {
-      "city": "Florence",
+      "city": "Bari",
       "country": "Italy",
       "users": 3
     }
@@ -168,8 +173,8 @@
   "search_queries": [
     {
       "query": "bruno rachiele",
-      "clicks": 21,
-      "impressions": 195,
+      "clicks": 22,
+      "impressions": 197,
       "position": 2.0
     },
     {
@@ -205,8 +210,14 @@
     {
       "query": "rachiele",
       "clicks": 0,
-      "impressions": 1,
-      "position": 9
+      "impressions": 2,
+      "position": 6.5
+    },
+    {
+      "query": "scenari politici",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 2
     },
     {
       "query": "settore manifatturiero",
@@ -215,17 +226,11 @@
       "position": 91
     },
     {
-      "query": "sondaggi politici 7 novembre 2026",
-      "clicks": 0,
-      "impressions": 2,
-      "position": 8.5
-    },
-    {
-      "query": "sondaggi politici novembre 2026",
+      "query": "sondaggi politici",
       "clicks": 0,
       "impressions": 1,
-      "position": 8
+      "position": 1
     }
   ],
-  "last_updated": "23/11/2026 11:55"
+  "last_updated": "24/11/2026 13:21"
 }
