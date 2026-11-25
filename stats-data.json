@@ -1,13 +1,12 @@
 {
   "kpis": {
-    "total_views": 1346,
+    "total_views": 1450,
     "total_clicks": 22,
-    "total_impressions": 213,
+    "total_impressions": 218,
     "avg_position": 15.7
   },
   "chart": {
     "labels": [
-      "10/11",
       "11/11",
       "12/11",
       "13/11",
@@ -21,10 +20,10 @@
       "21/11",
       "22/11",
       "23/11",
-      "24/11"
+      "24/11",
+      "25/11"
     ],
     "data": [
-      25,
       42,
       12,
       75,
@@ -38,39 +37,40 @@
       150,
       64,
       85,
-      17
+      94,
+      37
     ]
   },
   "top_posts": [
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/",
-      "views": 370,
+      "views": 410,
       "avg_time": "8s"
     },
     {
       "title": "brunorachiele.it",
       "url": "www.brunorachiele.it/?m=1",
-      "views": 162,
+      "views": 168,
       "avg_time": "6s"
     },
     {
       "title": "Bruno Rachiele | Sito Ufficiale, Biografia, Attivismo Politico, Libri e Sport",
       "url": "bio.brunorachiele.it/",
-      "views": 47,
+      "views": 45,
       "avg_time": "15s"
     },
     {
       "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html?m=1",
-      "views": 40,
+      "views": 41,
       "avg_time": "13s"
     },
     {
       "title": "Bruno Rachiele | Biografia Ufficiale, Editore, Attivismo Politico e Libri",
       "url": "bio.brunorachiele.it/",
-      "views": 38,
-      "avg_time": "15s"
+      "views": 40,
+      "avg_time": "14s"
     },
     {
       "title": "Sondaggio Politico 31 ottobre 2026 – Supermedia Bruno Rachiele",
@@ -81,7 +81,7 @@
     {
       "title": "Sondaggio Politico 14 novembre 2026 - Supermedia Bruno Rachiele",
       "url": "www.brunorachiele.it/2026/11/supermedia-sondaggi-politici-14-novembre-2026-bruno-rachiele.html",
-      "views": 27,
+      "views": 28,
       "avg_time": "16s"
     },
     {
@@ -107,17 +107,17 @@
     {
       "city": "Boardman",
       "country": "United States",
-      "users": 42
+      "users": 47
     },
     {
       "city": "Genoa",
       "country": "Italy",
-      "users": 18
+      "users": 19
     },
     {
       "city": "Malaga",
       "country": "Spain",
-      "users": 15
+      "users": 16
     },
     {
       "city": "Milan",
@@ -174,7 +174,7 @@
     {
       "query": "bruno rachiele",
       "clicks": 22,
-      "impressions": 197,
+      "impressions": 199,
       "position": 2.0
     },
     {
@@ -188,6 +188,12 @@
       "clicks": 0,
       "impressions": 1,
       "position": 6
+    },
+    {
+      "query": "graduatoria supermedia 2026",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 1.2
     },
     {
       "query": "indagini demoscopiche",
@@ -224,13 +230,7 @@
       "clicks": 0,
       "impressions": 1,
       "position": 91
-    },
-    {
-      "query": "sondaggi politici",
-      "clicks": 0,
-      "impressions": 1,
-      "position": 1
     }
   ],
-  "last_updated": "24/11/2026 13:21"
+  "last_updated": "25/11/2026 12:14"
 }
